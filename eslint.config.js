@@ -58,7 +58,7 @@ export default tseslint.config(
       'perfectionist/sort-imports': [
         'error',
         {
-          specialCharacters: 'trim',
+          specialCharacters: 'remove',
           internalPattern: ['^@/.*'],
           groups: [
             ['react-type', 'react'],
