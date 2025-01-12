@@ -4,7 +4,7 @@ A basic React starter template with Vite, TypeScript, ESLint, and Prettier etc.
 
 ## Tech Stack
 
-- Start with `pnpm create vite my-vue-app --template vue-ts`
+- Start with `pnpm create vite react-starter --template react-ts`
   - [Vite](https://vite.dev/guide/)
     - [@vitejs/plugin-react-swc](https://www.npmjs.com/package/@vitejs/plugin-react-swc)
     - [vite-tsconfig-paths](https://www.npmjs.com/package/vite-tsconfig-paths)
