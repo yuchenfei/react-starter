@@ -1,12 +1,15 @@
 import js from '@eslint/js'
+import jsdom from 'eslint-plugin-jest-dom'
 import jsxA11y from 'eslint-plugin-jsx-a11y'
 import perfectionist from 'eslint-plugin-perfectionist'
 import prettierRecommendedConfig from 'eslint-plugin-prettier/recommended'
 import react from 'eslint-plugin-react'
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
+import testingLibrary from 'eslint-plugin-testing-library'
 import globals from 'globals'
 import tseslint from 'typescript-eslint'
+import vitest from '@vitest/eslint-plugin'
 
 export default tseslint.config(
   { ignores: ['dist'] },
@@ -17,6 +20,9 @@ export default tseslint.config(
       react.configs.flat.recommended,
       react.configs.flat['jsx-runtime'],
       jsxA11y.flatConfigs.recommended,
+      vitest.configs.recommended,
+      jsdom.configs['flat/recommended'],
+      testingLibrary.configs['flat/react'],
       prettierRecommendedConfig,
     ],
     files: ['**/*.{ts,tsx}'],

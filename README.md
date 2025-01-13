@@ -2,6 +2,36 @@
 
 A basic React starter template with Vite, TypeScript, ESLint, and Prettier etc.
 
+## Table of Contents
+
+- [React Starter](#react-starter)
+  - [Table of Contents](#table-of-contents)
+  - [Getting Started](#getting-started)
+  - [Tech Stack](#tech-stack)
+  - [Expanding the ESLint configuration](#expanding-the-eslint-configuration)
+  - [Development Guide](#development-guide)
+    - [Commit Convention](#commit-convention)
+  - [License](#license)
+
+## Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/react-starter.git
+
+# Install dependencies
+pnpm install
+
+# Start dev server
+pnpm dev
+
+# Build for production
+pnpm build
+
+# Run tests
+pnpm test
+```
+
 ## Tech Stack
 
 - Start with `pnpm create vite react-starter --template react-ts`
@@ -31,6 +61,17 @@ A basic React starter template with Vite, TypeScript, ESLint, and Prettier etc.
 - [TanStack Router](https://tanstack.com/router/latest)
   - [@tanstack/router-plugin](https://www.npmjs.com/package/@tanstack/router-plugin)
   - [@tanstack/router-devtools](https://www.npmjs.com/package/@tanstack/router-devtools)
+- Testing
+  - [Vitest](https://vitest.dev/)
+  - [jsdom](https://www.npmjs.com/package/jsdom)
+  - [Testing Library](https://testing-library.com/)
+    - [@testing-library/react](https://www.npmjs.com/package/@testing-library/react)
+    - [@testing-library/jest-dom](https://www.npmjs.com/package/@testing-library/jest-dom)
+    - [@testing-library/user-event](https://www.npmjs.com/package/@testing-library/user-event)
+  - ESLint Plugins
+    - [@vitest/eslint-plugin](https://www.npmjs.com/package/@vitest/eslint-plugin)
+    - [eslint-plugin-jest-dom](https://www.npmjs.com/package/eslint-plugin-jest-dom)
+    - [eslint-plugin-testing-library](https://www.npmjs.com/package/eslint-plugin-testing-library)
 
 ## Expanding the ESLint configuration
 
@@ -52,3 +93,21 @@ export default tseslint.config({
 
 - Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
 - Optionally add `...tseslint.configs.stylisticTypeChecked`
+
+## Development Guide
+
+### Commit Convention
+
+Commit messages must follow the [Conventional Commits](https://www.conventionalcommits.org/) specification:
+
+- `feat`: New feature
+- `fix`: Bug fix
+- `docs`: Documentation changes
+- `style`: Code style changes
+- `refactor`: Code refactoring
+- `test`: Adding or updating tests
+- `chore`: Changes to build process or auxiliary tools
+
+## License
+
+MIT © yuchenfei
